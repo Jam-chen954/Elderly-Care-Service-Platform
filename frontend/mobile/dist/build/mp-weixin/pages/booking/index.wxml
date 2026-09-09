@@ -1,1 +1,0 @@
-<page-frame wx:if="{{a}}" u-s="{{['d']}}" u-i="64e31701-0" bind:__l="__l" u-p="{{a}}"><view class="mobile-card"><text class="card-title">服务目录待接入</text><text class="body-copy">后续可在这里查看服务内容、费用和可预约时段。当前暂不能提交预约。</text></view></page-frame>

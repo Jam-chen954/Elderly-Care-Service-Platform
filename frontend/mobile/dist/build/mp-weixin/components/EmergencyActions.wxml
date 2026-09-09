@@ -1,1 +1,0 @@
-<view class="emergency-actions"><button class="help-button" bindtap="{{a}}">紧急求助（未开通）</button><button class="phone-button" bindtap="{{b}}">拨打 120</button></view>

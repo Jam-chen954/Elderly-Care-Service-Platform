@@ -1,1 +1,0 @@
-"use strict";const e=require("../../common/vendor.js");Math||t();const t=()=>"../../components/PageFrame.js",n=e.defineComponent({__name:"index",setup:t=>(t,n)=>({a:e.p({title:"预约服务",subtitle:"社区服务，一目了然"})})});wx.createPage(n);

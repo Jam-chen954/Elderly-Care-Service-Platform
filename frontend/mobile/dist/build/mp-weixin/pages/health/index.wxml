@@ -1,1 +1,0 @@
-<page-frame wx:if="{{a}}" u-s="{{['d']}}" u-i="cf6ad3ec-0" bind:__l="__l" u-p="{{a}}"><view class="mobile-card"><text class="card-title">健康档案待接入</text><text class="body-copy">当前没有可展示的测量记录。未测量或缺失的数据不代表健康正常。</text></view></page-frame>
