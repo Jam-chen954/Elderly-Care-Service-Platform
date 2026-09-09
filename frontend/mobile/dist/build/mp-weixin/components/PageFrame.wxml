@@ -1,0 +1,1 @@
+<view class="{{['mobile-page', c && 'large-text']}}"><view class="mobile-heading"><text class="mobile-title">{{a}}</text><text class="mobile-subtitle">{{b}}</text></view><slot/><emergency-actions u-i="71423705-0" bind:__l="__l"/></view>

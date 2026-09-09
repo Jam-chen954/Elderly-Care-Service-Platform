@@ -1,0 +1,1 @@
+<page-frame wx:if="{{c}}" u-s="{{['d']}}" u-i="5f3d975e-0" bind:__l="__l" u-p="{{c}}"><view class="mobile-card"><text class="card-title">尚未登录</text><text class="body-copy">微信登录尚未接入。开通后，系统将根据账号权限展示老人、家属或服务人员功能。</text></view><button class="font-button" bindtap="{{b}}">{{a}}</button></page-frame>

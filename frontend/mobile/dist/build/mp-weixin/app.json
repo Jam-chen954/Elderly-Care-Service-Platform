@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/booking/index",
+    "pages/health/index",
+    "pages/profile/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f6f8f4",
+    "backgroundColor": "#f6f8f4"
+  },
+  "tabBar": {
+    "color": "#596b60",
+    "selectedColor": "#246c5d",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/booking/index",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/health/index",
+        "text": "健康"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

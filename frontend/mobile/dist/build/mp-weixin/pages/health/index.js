@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js");Math||t();const t=()=>"../../components/PageFrame.js",n=e.defineComponent({__name:"index",setup:t=>(t,n)=>({a:e.p({title:"我的健康",subtitle:"个人健康信息，仅向获准人员开放"})})});wx.createPage(n);

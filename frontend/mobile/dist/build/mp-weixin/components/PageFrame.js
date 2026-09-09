@@ -1,0 +1,1 @@
+"use strict";const e=require("../common/vendor.js"),t=require("../stores/preferences.js");Math||r();const r=()=>"./EmergencyActions.js",s=e.defineComponent({__name:"PageFrame",props:{title:{},subtitle:{}},setup(r){const s=t.usePreferencesStore();return(t,r)=>({a:e.t(t.title),b:e.t(t.subtitle),c:e.unref(s).largeText?1:""})}});wx.createComponent(s);

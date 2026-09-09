@@ -1,0 +1,23 @@
+{
+  "name": "社区养老服务平台",
+  "appid": "",
+  "description": "社区养老服务平台基础框架",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "uniStatistics": { "enable": false },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": true
+    },
+    "usingComponents": true
+  },
+  "h5": {
+    "title": "社区养老服务平台",
+    "router": {
+      "mode": "hash"
+    }
+  },
+  "vueVersion": "3"
+}

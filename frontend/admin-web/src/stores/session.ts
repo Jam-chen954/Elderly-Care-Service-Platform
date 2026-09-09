@@ -1,0 +1,44 @@
+import { computed, ref } from 'vue'
+import { defineStore } from 'pinia'
+import { authApi } from '../api/auth'
+import { ApiError } from '../api/http'
+import type { CurrentAccount } from '../api/types'
+
+const managementRoles = ['COMMUNITY_OPERATOR', 'DUTY_OFFICER', 'PLATFORM_ADMIN', 'AUDITOR']
+
+export const useSessionStore = defineStore('session', () => {
+  const account = ref<CurrentAccount | null>(null)
+  const initialized = ref(false)
+  const canAccessAdmin = computed(
+    () => account.value !== null && managementRoles.includes(account.value.role),
+  )
+
+  function clear() {
+    account.value = null
+    initialized.value = true
+  }
+
+  async function restore() {
+    try {
+      account.value = await authApi.me()
+    } catch (error) {
+      clear()
+      if (!(error instanceof ApiError && error.status === 401)) throw error
+    } finally {
+      initialized.value = true
+    }
+  }
+
+  async function login(username: string, password: string) {
+    account.value = await authApi.login(username, password)
+    initialized.value = true
+  }
+
+  async function logout() {
+    // 服务端确认注销后才清理界面；网络失败不能误报注销成功。
+    await authApi.logout()
+    clear()
+  }
+
+  return { account, initialized, canAccessAdmin, clear, restore, login, logout }
+})

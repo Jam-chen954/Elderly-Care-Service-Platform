@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的健康",
+  "usingComponents": {
+    "page-frame": "../../components/PageFrame"
+  }
+}

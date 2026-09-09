@@ -1,0 +1,1 @@
+"use strict";const e=require("../common/vendor.js"),t=e.defineStore("preferences",()=>{const t=e.ref(!0===e.index.getStorageSync("large-text"));return{largeText:t,toggleTextSize:function(){t.value=!t.value,e.index.setStorageSync("large-text",t.value)}}});exports.usePreferencesStore=t;
