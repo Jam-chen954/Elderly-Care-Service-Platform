@@ -2,3 +2,32 @@
 .idea/
 .playwright-cli/
 output/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+unpackage/
+*.tsbuildinfo
+
+# Backend build output and local databases
+target/
+.data/
+
+# Environment configuration; keep examples versioned
+.env
+.env.*
+!.env.example
+
+# Caches, logs and test reports
+.cache/
+*.log
+coverage/
+test-results/
+playwright-report/
+
+# WeChat developer tools personal configuration
+project.private.config.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
