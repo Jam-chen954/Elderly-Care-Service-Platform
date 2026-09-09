@@ -1,0 +1,4 @@
+.vscode/
+.idea/
+.playwright-cli/
+output/
